@@ -2,6 +2,9 @@
 
 .home {
   .intro {
+    @media @phone {
+      padding-top: 110px;
+    }
     img {
       width: 100%;
     }
@@ -82,20 +85,6 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-        .buttonMix(white, black, 10rem, 4rem, 1.5rem);
-        border-radius: 10%;
-        @media @phone {
-          width: 100%;
-          height: 5rem;
-          font-size: 2rem;
-        }
-        &:hover {
-          background: white;
-          color: black;
-        }
-      }
     }
 
     .walk-img {
@@ -111,6 +100,28 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+  }
+  .form {
+    .display(column, center, center);
+    input {
+      margin: 10px 0;
+      height: 30px;
+      width: 30%;
+      text-align: center;
+    }
+    .btn {
+      .buttonMix(white, black, 10rem, 4rem, 1.5rem);
+      border-radius: 10%;
+      @media @phone {
+        width: 100%;
+        height: 5rem;
+        font-size: 2rem;
+      }
+      &:hover {
+        background: white;
+        color: black;
       }
     }
   }
