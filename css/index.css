@@ -1,3 +1,11 @@
+@keyframes animation {
+  from {
+    border-radius: 0%;
+  }
+  to {
+    border-radius: 200%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -334,4 +342,8 @@ footer {
 .home .form .btn:hover {
   background: white;
   color: black;
+}
+.home img:hover {
+  animation-name: animation;
+  animation-duration: 5s;
 }
